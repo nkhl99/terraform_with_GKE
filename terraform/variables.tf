@@ -4,5 +4,3 @@ variable "region" {
 }
 variable "container_image" {
 }
-variable "credential_path" {
-}
