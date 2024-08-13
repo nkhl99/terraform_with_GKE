@@ -50,6 +50,6 @@ jobs:
         -var="container_image=us.gcr.io/$GCP_PROJECT_ID/nodeappimage:$IMAGE_TAG" \
         -out=PLAN
       working-directory: ./terraform
-    - name: Terraform Apply
-      run: terraform destroy PLAN
+    - name: Terraform Destroy
+      run: terraform destroy
       working-directory: ./terraform
